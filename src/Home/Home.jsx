@@ -6,7 +6,7 @@ import Navbar from "../Navbar/Navbar";
 import Ad from "./Ad";
 import FAQ from "./FAQ";
 import Features from "./Features";
-import Ourproduct from "./Ourproduct";
+import Ourproduct from "./Ourproduct.jsx";
 import Testemonials from "./Testemonials";
 import UseCases from "./UseCases";
 const Home = () => {
