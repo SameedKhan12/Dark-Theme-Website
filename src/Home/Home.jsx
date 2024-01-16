@@ -1,14 +1,14 @@
 import React from "react";
-import Footer from "../Footer/Footer";
-import Hero from "../HeroSection/Hero";
+import Footer from "../Footer/Footer.jsx";
+import Hero from "../HeroSection/Hero.jsx";
 
-import Navbar from "../Navbar/Navbar";
-import Ad from "./Ad";
-import FAQ from "./FAQ";
-import Features from "./Features";
+import Navbar from "../Navbar/Navbar.jsx";
+import Ad from "./Ad.jsx";
+import FAQ from "./FAQ.jsx";
+import Features from "./Features.jsx";
 import Ourproduct from "./Ourproduct.jsx";
-import Testemonials from "./Testemonials";
-import UseCases from "./UseCases";
+import Testemonials from "./Testemonials.jsx";
+import UseCases from "./UseCases.jsx";
 const Home = () => {
   return (
     <div className="font-lexend  text-white ">
