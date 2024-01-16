@@ -2,7 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import useResponsive from "../Hooks/useResponsive";
 
-const Ourproduct = () => {
+const OurProduct = () => {
   const [res]=useResponsive()
   return (
     <div className="max-w-[1580px] mx-auto max-2xl:mx-[20px] 2xl:mb-[150px] lg:mb-[120px] mb-[80px]">
@@ -75,4 +75,4 @@ const Ourproduct = () => {
   );
 };
 
-export default Ourproduct;
+export default OurProduct;

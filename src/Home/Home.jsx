@@ -6,7 +6,7 @@ import Navbar from "../Navbar/Navbar.jsx";
 import Ad from "./Ad.jsx";
 import FAQ from "./FAQ.jsx";
 import Features from "./Features.jsx";
-import Ourproduct from "./Ourproduct.jsx";
+import OurProduct from "./OurProduct";
 import Testemonials from "./Testemonials.jsx";
 import UseCases from "./UseCases.jsx";
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
     <div className="font-lexend  text-white ">
       <Navbar/>
       <Hero />
-      <Ourproduct/>
+      <OurProduct/>
       <UseCases/>
       <Features/>
       <FAQ/>
