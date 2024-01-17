@@ -94,8 +94,8 @@ const Footer = () => {
           </button>
         </div>
         <hr className="border border-[#262626]" />
-        <div className="flex justify-between items-center lg:p-[12px] 2xl:p-[14px] bg-[#1A1A1A] border border-[#262626] rounded-full">
-          <div className="flex gap-[8px] 2xl:gap-[14px]">
+        <div className="flex lg:flex-row flex-col max-lg:gap-[20px] justify-between items-center lg:p-[12px] 2xl:p-[14px] bg-[#1A1A1A] border border-[#262626] rounded-full">
+          <div className="flex relative -top-[18px] lg:top-auto gap-[8px] 2xl:gap-[14px]">
             <div className="p-[12px] 2xl:p-[14px] bg-[#caff33] rounded-full">
               <Icon
                 icon={"fa-brands:facebook"}

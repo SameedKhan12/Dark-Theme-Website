@@ -1,10 +1,30 @@
 import { Icon } from "@iconify/react";
-import React from "react";
+import React, { useState } from "react";
 import useResponsive from "../Hooks/useResponsive";
 import Comma from "../assets/Text.svg";
+import Crousal from "./Crousal";
 
 const Testemonials = () => {
   const [res] = useResponsive();
+  const [page,setPage]=useState(1)
+  function handleNext(){
+    if(page<3){
+      setPage(page+1)
+      return
+    }if(page===3){
+      setPage(1)
+      return
+    }
+  }
+  function handleprevious(){
+    if(page>1){
+      setPage(page-1)
+      return
+    }if(page===1){
+      setPage(3)
+      return
+    }
+  }
   return (
     <div className=" flex flex-col max-w-[1580px] mx-auto max-2xl:mx-[20px] 2xl:mb-[150px] lg:mb-[120px] mb-[80px] 2xl:gap-y-[80px] lg:gap-y-[60px] gap-y-[50px]">
       <div
@@ -36,9 +56,12 @@ const Testemonials = () => {
           </button>
         </div>
       </div>
-      <div className="flex items-center lg:gap-[40px] 2xl:gap-[50px]">
+      <div className="hidden lg:flex items-center lg:gap-[40px] 2xl:gap-[50px]">
         <button className="p-[12px] 2xl:p-[14px] rounded-full border border-[#262626] bg-[#1C1C1C]">
-            <Icon  icon="heroicons:arrow-small-left" className="text-[#caff33] lg:text-[20px] 2xl:text-[25px]"/>
+          <Icon
+            icon="heroicons:arrow-small-left"
+            className="text-[#caff33] lg:text-[20px] 2xl:text-[25px]"
+          />
         </button>
         <div className="relative">
           <div className="flex gap-[60px] 2xl:gap-[80px]">
@@ -76,9 +99,13 @@ const Testemonials = () => {
           <div className="absolute top-0 z-20 right-0 w-[398px] h-[291px] 2xl:w-[556px] 2xl:h-[349px] bg-gradient-to-r from-transparent from-10% to-[#191919] to-90%"></div>
         </div>
         <button className="p-[12px] 2xl:p-[14px] rounded-full border border-[#262626] bg-[#1C1C1C]">
-            <Icon  icon="heroicons:arrow-small-right" className="text-[#caff33] lg:text-[20px] 2xl:text-[25px]"/>
+          <Icon
+            icon="heroicons:arrow-small-right"
+            className="text-[#caff33] lg:text-[20px] 2xl:text-[25px]"
+          />
         </button>
       </div>
+     <Crousal/>
     </div>
   );
 };

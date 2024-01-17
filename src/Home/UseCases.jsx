@@ -29,10 +29,10 @@ const UseCases = () => {
       </p>
       </div>
       {/* Second Container */}
-      <div className="grid lg:grid-rows-2 lg:grid-cols-2 grid-rows-4 grid-cols-1 gap-x-[100px] gap-y-[80px] mt-[60px] 2xl:mt-[80px] ">
+      <div className="grid lg:grid-rows-2 lg:grid-cols-2 grid-rows-4 grid-cols-1 gap-x-[100px] gap-y-[30px] lg:gap-y-[80px] mt-[60px] 2xl:mt-[80px] ">
         <div className="bg-[#1c1c1c] rounded-3xl 2xl:p-[50px] lg:p-[40px] p-[20px] relative ">
             <img className="absolute top-0 left-0 z-0" src={Ab3} alt="" />
-          <div className="relative z-10 lg:h-full grid grid-rows-2 grid-cols-2  gap-[10px] 2xl:gap-[20px]">
+          <div className="relative z-10 h-full grid grid-rows-2 grid-cols-2  gap-[10px] 2xl:gap-[20px]">
             <div className="row-auto p-[14px] lg:p-[24px] 2xl:p-[30px] text-center bg-[#1A1A1A] rounded-xl h-fit">
               <div className="inline-block p-[20px] rounded-full bg-gradient-to-b from-[#c8ff320f] from-0% via-[#262626] via-50%  to-[#1c1c1c] to-90% mb-[14px] 2xl:mb-[24px]">
                 <img className=" w-[25px]" src={Moneybag} alt="" />
@@ -138,7 +138,7 @@ const UseCases = () => {
         </div>
         <div className="bg-[#1c1c1c] rounded-3xl 2xl:p-[50px] lg:p-[40px] p-[20px] relative">
             <img className="absolute top-0 right-0 z-0" src={Ab4} alt="" />
-          <div className="relative z-10 h-full grid lg:grid-rows-2 lg:grid-cols-2 grid-rows-4 grid-cols-1 gap-[10px] 2xl:gap-[20px]">
+          <div className="relative z-10 h-full grid grid-rows-2 grid-cols-2  gap-[10px] 2xl:gap-[20px]">
             <div className="p-[14px] lg:p-[24px] 2xl:p-[30px] text-center bg-[#1A1A1A] rounded-xl">
               <div className="inline-block p-[20px] rounded-full bg-gradient-to-b from-[#c8ff320f] from-0% via-[#262626] via-50%  to-[#1c1c1c] to-90% mb-[14px] 2xl:mb-[24px]">
               <Icon className=" text-[#caff33] text-[25px]" icon="heroicons:building-office-2-solid" />
