@@ -6,25 +6,7 @@ import Crousal from "./Crousal";
 
 const Testemonials = () => {
   const [res] = useResponsive();
-  const [page,setPage]=useState(1)
-  function handleNext(){
-    if(page<3){
-      setPage(page+1)
-      return
-    }if(page===3){
-      setPage(1)
-      return
-    }
-  }
-  function handleprevious(){
-    if(page>1){
-      setPage(page-1)
-      return
-    }if(page===1){
-      setPage(3)
-      return
-    }
-  }
+
   return (
     <div className=" flex flex-col max-w-[1580px] mx-auto max-2xl:mx-[20px] 2xl:mb-[150px] lg:mb-[120px] mb-[80px] 2xl:gap-y-[80px] lg:gap-y-[60px] gap-y-[50px]">
       <div
@@ -66,7 +48,7 @@ const Testemonials = () => {
         <div className="relative">
           <div className="flex gap-[60px] 2xl:gap-[80px]">
             <div className="flex flex-col gap-y-[30px] lg:gap-y-[40px] 2xl:gap-y-[50px] items-center text-center">
-              <img src={Comma} alt="" />
+              <img src={Comma} className="w-[44px] 2xl:w-[60px]" alt="" />
               <p>
                 YourBank has been my trusted financial partner for years. Their
                 personalized service and innovative digital banking solutions
@@ -75,7 +57,7 @@ const Testemonials = () => {
               <span className="text-[#caff33]">Sara T</span>
             </div>
             <div className="flex flex-col gap-y-[30px] lg:gap-y-[40px] 2xl:gap-y-[50px] items-center text-center">
-              <img src={Comma} alt="" />
+              <img src={Comma} className="w-[44px] 2xl:w-[60px]" alt="" />
               <p>
                 I recently started my own business, and YourBank has been
                 instrumental in helping me set up my business accounts and
@@ -85,7 +67,7 @@ const Testemonials = () => {
               <span className="text-[#caff33]">John D</span>
             </div>
             <div className="flex flex-col gap-y-[30px] lg:gap-y-[40px] 2xl:gap-y-[50px] items-center text-center">
-              <img src={Comma} alt="" />
+              <img src={Comma} className="w-[44px] 2xl:w-[60px]" alt="" />
               <p>
                 I love the convenience of YourBank's mobile banking app. It
                 allows me to stay on top of my finances and make transactions on

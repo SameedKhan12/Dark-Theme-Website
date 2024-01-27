@@ -10,10 +10,14 @@ export default {
       fontFamily: {
         'lexend': ['Lexend', 'sans-serif'],
       },
+      backgroundImage: {
+        'Bgimg': "url('./src/assets/2903964_25862.jpg')",
+        
+      
     },
   },
   plugins: [
     require('flowbite/plugin')
   ],
 }
-
+}

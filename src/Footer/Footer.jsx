@@ -6,7 +6,7 @@ import useResponsive from "../Hooks/useResponsive";
 const Footer = () => {
   const [res] = useResponsive();
   return (
-    <div className="">
+    <div className="bg-[#1c1c1c]">
       <footer className="max-w-[1580px] mx-auto max-2xl:mx-[20px] pt-[50px] pb-[30px] lg:pt-[60px] 2xl:pt-[100px] 2xl:pb-[50px] flex flex-col gap-[30px] lg:gap-[40px] 2xl:gap-[50px]">
         <div className="flex flex-col items-center gap-[40px]">
           <img src={Logo} alt="" />

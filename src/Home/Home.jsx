@@ -12,7 +12,7 @@ import UseCases from "./UseCases.jsx";
 const Home = () => {
   return (
     <div className="font-lexend  text-white ">
-      <Navbar/>
+      <Navbar selected={0} />
       <Hero />
       <OurProduct/>
       <UseCases/>

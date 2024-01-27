@@ -59,8 +59,8 @@ const Crousal = () => {
           <span className="text-[#caff33]">John D</span>
         </div>
       </Carousel>
-      <div className="absolute top-0 z-20 left-0 w-[398px] h-[291px] 2xl:w-[556px] 2xl:h-[349px] bg-gradient-to-l from-transparent from-10% to-[#191919] to-90%"></div>
-          <div className="absolute top-0 z-20 right-0 w-[398px] h-[291px] 2xl:w-[556px] 2xl:h-[349px] bg-gradient-to-r from-transparent from-10% to-[#191919] to-90%"></div>
+      <div className="absolute top-0 z-20 left-0 w-[89px] h-[233px] lg:w-[398px] lg:h-[291px] 2xl:w-[556px] 2xl:h-[349px] bg-gradient-to-l from-transparent from-10% to-[#191919] to-90%"></div>
+      <div className="absolute top-0 z-20 right-0 w-[89px] h-[233px] lg:w-[398px] lg:h-[291px] 2xl:w-[556px] 2xl:h-[349px] bg-gradient-to-r from-transparent from-10% to-[#191919] to-90%"></div>
     </div>
   );
 };
