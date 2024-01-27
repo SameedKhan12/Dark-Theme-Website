@@ -84,17 +84,20 @@ const Navbar = ({ selected }) => {
           <img className="py-[20px]" src={Logo} alt="" />
           <ul className="block w-full pb-[20px]">
             <li className="py-[12px] w-full text-center rounded-[82px] bg-[#262626]">
-              Home
+            <Link to={"/"}>Home</Link>
             </li>
-            <li className="py-[12px] w-full text-center ">Career</li>
+            <li className="py-[12px] w-full text-center "><Link to={"/career"}>Career</Link></li>
             <li className="py-[12px] w-full text-center">About</li>
             <li className="py-[12px] w-full text-center">Security</li>
           </ul>
           <div className="flex flex-col gap-7 w-full">
             <button className="py-[14px] w-full  text-black bg-[#CAFF33] rounded-[82px]">
-              Login
+            <Link to={"/login"}>Login</Link>
             </button>
-            <button className="">Sign up</button>
+            <button className="">
+            <Link to={"/signup"}>Sign up</Link>
+
+            </button>
           </div>
         </div>
       </div>
