@@ -83,12 +83,20 @@ const Navbar = ({ selected }) => {
         <div className="relative left-0 z-50 w-[70%] sm:w-[75%] md:w-[60%] h-full bg-[#1a1a1a] flex flex-col justify-start items-center px-10 py-[20px] sm:py-[30px] md:py-[40px] lg:py-[50px] ">
           <img className="py-[20px]" src={Logo} alt="" />
           <ul className="block w-full pb-[20px]">
-            <li className="py-[12px] w-full text-center rounded-[82px] bg-[#262626]">
+            <li className={`py-[12px] w-full text-center ${
+              selected === 0 ? "rounded-[82px] bg-[#262626]" : ""
+            }`}>
             <Link to={"/"}>Home</Link>
             </li>
-            <li className="py-[12px] w-full text-center "><Link to={"/career"}>Career</Link></li>
-            <li className="py-[12px] w-full text-center">About</li>
-            <li className="py-[12px] w-full text-center">Security</li>
+            <li className={`py-[12px] w-full text-center ${
+              selected === 1 ? "rounded-[82px] bg-[#262626]" : ""
+            }`}><Link to={"/career"}>Career</Link></li>
+            <li className={`py-[12px] w-full text-center ${
+              selected === 2 ? "rounded-[82px] bg-[#262626]" : ""
+            }`}><Link to={"/about"}>About</Link></li>
+            <li className={`py-[12px] w-full text-center ${
+              selected === 3 ? "rounded-[82px] bg-[#262626]" : ""
+            }`}>Security</li>
           </ul>
           <div className="flex flex-col gap-7 w-full">
             <button className="py-[14px] w-full  text-black bg-[#CAFF33] rounded-[82px]">

@@ -50,7 +50,7 @@ const Login = () => {
                 type="Password"
                 name=""
                 id=""
-                placeholder="password"
+                placeholder="Password"
                 className="bg-[#1A1A1A] border-[#262626] border rounded-full p-[16px] lg:p-[20px] 2xl:p-[24px] placeholder:text-[#59595A] text-[#B3B3B3] w-full focus:outline-2 focus:outline-[#B3B3B3] focus:border-none"
               />
             </form>
