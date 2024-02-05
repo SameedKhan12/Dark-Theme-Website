@@ -8,8 +8,9 @@ import { Carousel } from "flowbite-react";
 const Crousal = () => {
   const [res] = useResponsive();
   return (
-    <div className="lg:hidden block relative h-56 sm:h-64 xl:h-80 2xl:h-96">
+    <div className="lg:hidden relative block h">
       <Carousel
+        className="h-96"
         leftControl={
           <button className="p-[12px] 2xl:p-[14px] relative z-30 rounded-full border border-[#262626] bg-[#1C1C1C]">
             <Icon

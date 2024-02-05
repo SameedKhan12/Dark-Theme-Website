@@ -13,7 +13,7 @@ const Login = () => {
   return (
     <div className="font-lexend text-white">
       <Navbar />
-      <div className="flex justify-center w-full relative z-50 mb-[80px] lg:mb-[120px] 2xl:mb-[150px]">
+      <div className="flex justify-center w-full relative z-20 mb-[80px] lg:mb-[120px] 2xl:mb-[150px]">
         <div className="relative flex flex-col items-center w-[90%] lg:w-[80%] px-[30px] md:px-10 lg:px-0 py-[30px] md:py-[60px] lg:py-[80px] 2xl:py-[100px]  bg-[#1C1C1C] gap-[40px] lg:gap-[60px] 2xl:gap-[80px] rounded-3xl border border-[#262626]">
           <img className="w-[167px] lg:w-[256px] 2xl:w-[342px] absolute top-0 right-0" src={Ab4} alt="" />
           <div className="w-[95%] md:w-[90%] lg:w-[85%] 2xl:w-[80%] text-center relative z-10">
@@ -95,7 +95,7 @@ const Login = () => {
                       icon="ri:google-fill"
                     />
                   </div>
-                  <div className="inline-block p-[20px] rounded-full bg-gradient-to-b from-[#c8ff321d] from-10% via-[#262626] via-50%  to-[#1c1c1c] to-80%">
+                  <div  className="inline-block p-[20px] rounded-full bg-gradient-to-b from-[#c8ff321d] from-10% via-[#262626] via-50%  to-[#1c1c1c] to-80%">
                     <Icon
                       className=" text-[#caff33] text-[24px] 2xl:text-[30px]"
                       icon="ic:baseline-facebook"

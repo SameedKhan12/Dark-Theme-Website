@@ -46,12 +46,14 @@ const Navbar = ({ selected }) => {
           </li>
         </ul>
         <div className="lg:inline hidden">
-          <button className="mr-[30px]">
-            <Link to={"/signup"}>Sign up</Link>
-          </button>
-          <button className="py-[14px] px-[30px] text-black bg-[#CAFF33] rounded-[82px]">
-            <Link to={"/login"}>Login</Link>
-          </button>
+          <Link to={"/signup"}>
+            <button className="mr-[30px]">Sign up</button>
+          </Link>
+          <Link to={"/login"}>
+            <button className="py-[14px] px-[30px] text-black bg-[#CAFF33] rounded-[82px]">
+              Login
+            </button>
+          </Link>
         </div>
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -83,28 +85,41 @@ const Navbar = ({ selected }) => {
         <div className="relative left-0 z-50 w-[70%] sm:w-[75%] md:w-[60%] h-full bg-[#1a1a1a] flex flex-col justify-start items-center px-10 py-[20px] sm:py-[30px] md:py-[40px] lg:py-[50px] ">
           <img className="py-[20px]" src={Logo} alt="" />
           <ul className="block w-full pb-[20px]">
-            <li className={`py-[12px] w-full text-center ${
-              selected === 0 ? "rounded-[82px] bg-[#262626]" : ""
-            }`}>
-            <Link to={"/"}>Home</Link>
+            <li
+              className={`py-[12px] w-full text-center ${
+                selected === 0 ? "rounded-[82px] bg-[#262626]" : ""
+              }`}
+            >
+              <Link to={"/"}>Home</Link>
             </li>
-            <li className={`py-[12px] w-full text-center ${
-              selected === 1 ? "rounded-[82px] bg-[#262626]" : ""
-            }`}><Link to={"/career"}>Career</Link></li>
-            <li className={`py-[12px] w-full text-center ${
-              selected === 2 ? "rounded-[82px] bg-[#262626]" : ""
-            }`}><Link to={"/about"}>About</Link></li>
-            <li className={`py-[12px] w-full text-center ${
-              selected === 3 ? "rounded-[82px] bg-[#262626]" : ""
-            }`}>Security</li>
+            <li
+              className={`py-[12px] w-full text-center ${
+                selected === 1 ? "rounded-[82px] bg-[#262626]" : ""
+              }`}
+            >
+              <Link to={"/career"}>Career</Link>
+            </li>
+            <li
+              className={`py-[12px] w-full text-center ${
+                selected === 2 ? "rounded-[82px] bg-[#262626]" : ""
+              }`}
+            >
+              <Link to={"/about"}>About</Link>
+            </li>
+            <li
+              className={`py-[12px] w-full text-center ${
+                selected === 3 ? "rounded-[82px] bg-[#262626]" : ""
+              }`}
+            >
+              Security
+            </li>
           </ul>
           <div className="flex flex-col gap-7 w-full">
             <button className="py-[14px] w-full  text-black bg-[#CAFF33] rounded-[82px]">
-            <Link to={"/login"}>Login</Link>
+              <Link to={"/login"}>Login</Link>
             </button>
             <button className="">
-            <Link to={"/signup"}>Sign up</Link>
-
+              <Link to={"/signup"}>Sign up</Link>
             </button>
           </div>
         </div>

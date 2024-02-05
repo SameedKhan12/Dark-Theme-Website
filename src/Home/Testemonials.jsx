@@ -48,7 +48,15 @@ const Testemonials = () => {
         <div className="relative">
           <div className="flex gap-[60px] 2xl:gap-[80px]">
             <div className="flex flex-col gap-y-[30px] lg:gap-y-[40px] 2xl:gap-y-[50px] items-center text-center">
-              <img src={Comma} className="w-[44px] 2xl:w-[60px]" alt="" />
+              <div className="w-full flex items-center">
+                <div className="h-[3px] bg-[#262626] w-full"></div>
+                <img
+                  src={Comma}
+                  className="w-[32px] md:w-[44px] 2xl:w-[60px] mx-[16px] 2xl:mx-[20px]"
+                  alt=""
+                />
+                <div className="h-[3px] bg-[#262626] w-full"></div>
+              </div>
               <p>
                 YourBank has been my trusted financial partner for years. Their
                 personalized service and innovative digital banking solutions
@@ -57,7 +65,15 @@ const Testemonials = () => {
               <span className="text-[#caff33]">Sara T</span>
             </div>
             <div className="flex flex-col gap-y-[30px] lg:gap-y-[40px] 2xl:gap-y-[50px] items-center text-center">
-              <img src={Comma} className="w-[44px] 2xl:w-[60px]" alt="" />
+              <div className="w-full flex items-center">
+                <div className="h-[3px] bg-[#262626] w-full"></div>
+                <img
+                  src={Comma}
+                  className="w-[32px] md:w-[44px] 2xl:w-[60px] mx-[16px] 2xl:mx-[20px]"
+                  alt=""
+                />
+                <div className="h-[3px] bg-[#262626] w-full"></div>
+              </div>
               <p>
                 I recently started my own business, and YourBank has been
                 instrumental in helping me set up my business accounts and
@@ -67,7 +83,15 @@ const Testemonials = () => {
               <span className="text-[#caff33]">John D</span>
             </div>
             <div className="flex flex-col gap-y-[30px] lg:gap-y-[40px] 2xl:gap-y-[50px] items-center text-center">
-              <img src={Comma} className="w-[44px] 2xl:w-[60px]" alt="" />
+              <div className="w-full flex items-center">
+                <div className="h-[3px] bg-[#262626] w-full"></div>
+                <img
+                  src={Comma}
+                  className="w-[32px] md:w-[44px] 2xl:w-[60px] mx-[16px] 2xl:mx-[20px]"
+                  alt=""
+                />
+                <div className="h-[3px] bg-[#262626] w-full"></div>
+              </div>
               <p>
                 I love the convenience of YourBank's mobile banking app. It
                 allows me to stay on top of my finances and make transactions on
@@ -87,7 +111,7 @@ const Testemonials = () => {
           />
         </button>
       </div>
-     <Crousal/>
+      <Crousal />
     </div>
   );
 };
