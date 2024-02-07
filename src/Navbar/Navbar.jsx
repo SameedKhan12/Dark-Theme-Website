@@ -111,7 +111,8 @@ const Navbar = ({ selected }) => {
                 selected === 3 ? "rounded-[82px] bg-[#262626]" : ""
               }`}
             >
-              Security
+              <Link to={'/security'}>Security</Link>
+              
             </li>
           </ul>
           <div className="flex flex-col gap-7 w-full">
