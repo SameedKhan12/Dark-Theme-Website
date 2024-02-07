@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import useResponsive from "../Hooks/useResponsive";
 import Ab3 from "../assets/Abstract design/Abstract Design 3.png";
 import Ab4 from "../assets/Abstract design/Abstract Design4.png";
 import Moneybag from "../assets/Group.svg";
 import BankH from "../assets/Bank-hand.svg";
 import { Icon } from "@iconify/react";
+import { useInView } from "framer-motion";
+
 const UseCases = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
   const [res] = useResponsive();
   return (
-    <div className="max-w-[1580px] mx-auto max-2xl:mx-[20px] 2xl:mb-[150px] lg:mb-[120px] mb-[80px] ">
+    <div ref={ref} className={`max-w-[1580px] mx-auto max-2xl:mx-[20px] 2xl:mb-[150px] lg:mb-[120px] mb-[80px] transition-all duration-1000 ${isInView?'opacity-100':'opacity-0'} ${isInView?'translate-y-0':'translate-y-14'}`}>
       {/* first Container */}
       <div className="lg:text-start text-center flex flex-col lg:items-start items-center">
 

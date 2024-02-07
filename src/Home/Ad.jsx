@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import useResponsive from "../Hooks/useResponsive";
 import Ab3 from "../assets/Abstract design/Abstract Design 3.png";
 import { Button } from "@material-tailwind/react";
+import { useInView } from "framer-motion";
 
 const Ad = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
     const [res] = useResponsive();
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-[#262626] flex max-w-[1580px] mx-auto max-2xl:mx-[20px] 2xl:mb-[150px] lg:mb-[120px] mb-[80px] 2xl:gap-y-[80px] lg:gap-y-[60px] gap-y-[50px] p-[80px]">
+    <div ref={ref} className={`relative overflow-hidden rounded-2xl border border-[#262626] flex max-w-[1580px] mx-auto max-2xl:mx-[20px] 2xl:mb-[150px] lg:mb-[120px] mb-[80px] 2xl:gap-y-[80px] lg:gap-y-[60px] gap-y-[50px] p-[80px] transition-all duration-1000 ${isInView?'opacity-100':'opacity-0'} ${isInView?'translate-y-0':'translate-y-24'}`}>
       <div
         id="top"
         className="flex lg:flex-row flex-col w-full justify-between items-center  max-lg:gap-[20px]"

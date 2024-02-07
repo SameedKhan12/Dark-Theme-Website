@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Icon } from "@iconify/react";
 import useResponsive from "../Hooks/useResponsive";
+import { useInView } from "framer-motion";
+
 
 const OurProduct = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
   const [res]=useResponsive()
   return (
-    <div className="max-w-[1580px] mx-auto max-2xl:mx-[20px] 2xl:mb-[150px] lg:mb-[120px] mb-[80px]">
+    <div ref={ref} className={`max-w-[1580px] mx-auto max-2xl:mx-[20px] 2xl:mb-[150px] lg:mb-[120px] mb-[80px] transition-all duration-1000 ${isInView?'opacity-100':'opacity-0'} ${isInView?'translate-y-0':'translate-y-14'}`}>
       <div id="top" className="flex lg:flex-row flex-col justify-between items-center  lg:items-end gap-[20px] lg:gap-[150px]  2xl:gap-[300px]">
         <div className="max-w-[910px] lg:text-start text-center flex flex-col lg:items-start items-center">
           <p className={`${res("text-[48px]","text-[38px]","text-[28px]")}`}>

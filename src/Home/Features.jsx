@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import useResponsive from "../Hooks/useResponsive";
 import { Icon } from "@iconify/react";
+import { useInView } from "framer-motion";
+
 const Features = () => {
   const [res] = useResponsive();
+  const ref = useRef(null);
+  const isInView = useInView(ref);
   return (
-    <div className="max-w-[1580px] mx-auto max-2xl:mx-[20px] 2xl:mb-[150px] lg:mb-[120px] mb-[80px]">
+
+    <div ref={ref} className={`max-w-[1580px] mx-auto max-2xl:mx-[20px] 2xl:mb-[150px] lg:mb-[120px] mb-[80px] transition-all duration-1000 ${isInView?'opacity-100':'opacity-0'} ${isInView?'translate-y-0':'translate-y-14'}`}>
       <div id="text-con" className="lg:text-start text-center flex flex-col lg:items-start items-center">
         <h3 className={`${res("text-[48px]", "text-[38px]", "text-[28px]")}`}>
           Our <span className="text-[#CAFF33]">Features</span>

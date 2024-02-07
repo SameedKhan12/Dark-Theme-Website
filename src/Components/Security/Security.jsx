@@ -5,10 +5,13 @@ import Ab4 from "../../assets/Abstract design/Abstract Design4.png";
 import { Icon } from "@iconify/react";
 import FAQ from "../../Home/FAQ"
 import Footer from "../../Footer/Footer.jsx"
+import { motion, useScroll, useSpring } from "framer-motion";
 const Security = () => {
-  
+  const  {scrollYProgress}  = useScroll();
+  const scaleX = useSpring(scrollYProgress);
   return (
     <div className="font-lexend text-white">
+      <motion.div style={{scaleX}} className={`fixed top-0 origin-left inset-x-0 h-1 bg-[#caff33] z-30`} ></motion.div>
       <Navbar selected={3} />
       <div className="xl:max-w-[1280px] 2xl:max-w-[1580px] mx-5 lg:mx-auto">
         <div className="flex flex-col-reverse lg:flex-row justify-end  p-[14px] sm:p-[20px] md:p-[30px] lg:p-[40px] 2xl:p-[50px]  bg-[#1C1C1C] relative w-full 2xl:mb-[150px] lg:mb-[120px] mb-[80px]">
@@ -37,7 +40,7 @@ const Security = () => {
             </p>
           </div>
           <img
-            className="h-[253px] lg:h-[568px] 2xl:h-[716px] relative right-0 z-0"
+            className="w-full lg:w-[60%] relative right-0 z-0"
             src={SecurityImg}
             alt=""
           />
